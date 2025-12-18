@@ -6,4 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print base ref
-        run: echo "$GITHUB_BASE_REF"
+        run: |
+          echo "${{ GITHUB_BASE_REF }}"
